@@ -18,7 +18,7 @@ function isCardDetailPage() {
 }
 
 function setCardIdInDetail() {
-  var idRegex = /\/c\/.*\/(\d+)-.*/;
+  var idRegex = /\/c\/(\w*)\/\d+-.*/; 
   var results = idRegex.exec(document.location.pathname);
   var id = results[1];
   var cardTitle = document.getElementsByClassName("window-header")[0];
